@@ -1,3 +1,6 @@
+from textnode import TextNode, TextType
+
+
 def split_nodes_delimiter(old_nodes: list[TextNode], delimiter: str, text_type: TextType) -> list[TextNode]:
     new_listen = []
     for old_node in old_nodes:
@@ -13,6 +16,3 @@ def split_nodes_delimiter(old_nodes: list[TextNode], delimiter: str, text_type: 
             else:
                 new_listen.append(TextNode(sections[i], text_type))
     return new_listen
-
-
-    
